@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #c084fc;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  color: #a78bfa;
+}
+
+.presentacion, .galeria, .nosotros {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.presentacion p, .nosotros p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #d1d5db;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.btn-discord, .btn-pago {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-discord {
+  background-color: #5865F2;
+  color: white;
+}
+
+.btn-discord:hover {
+  background-color: #4752c4;
+}
+
+.btn-pago {
+  background-color: #6D28D9;
+  color: white;
+}
+
+.btn-pago:hover {
+  background-color: #5b21b6;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imagenes img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
+  transition: transform 0.3s;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #aaa;
+}
+
+.marca-agua {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #a78bfa;
+  font-style: italic;
+}
