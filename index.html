@@ -2,38 +2,98 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UrbanMods | Shop</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="Logo Urban Mods.png" type="image/png" />
+  <link rel="icon" href="img/logo.png" />
 </head>
 <body>
   <header>
-    <img src="Logo Urban Mods.png" alt="Logo UrbanMods" class="logo" />
-    <h1>UrbanMods | Shop</h1>
-    <p>Ropa personalizada para FiveM</p>
-    <p class="marca-agua">Dev By Kevin</p>
+    <div class="header-container">
+      <img src="img/logo.png" alt="UrbanMods Logo" class="logo" />
+      <div class="botonera">
+        <h1 class="title-animate">🔥 UrbanMods | Shop 🔥</h1>
+        <div class="acciones-header">
+          <button id="theme-toggle" title="Modo claro/oscuro">🌙</button>
+          <button class="toggle-urban top-btn" title="Ver nuestros servicios">🧰 Ver servicios <span class="flecha">▼</span></button>
+          <button class="btn-explorar" title="Explorar trabajos">🔎 Explorar</button>
+        </div>
+      </div>
+    </div>
+    <p class="slogan">🎨 Diseños visuales únicos para tu servidor FiveM 🎨</p>
+    <p class="tagline">✨ Tu personaje, tu estilo... UrbanMods lo hace realidad ✨</p>
   </header>
 
   <main>
-    <section class="productos">
+    <section class="productos fade-in slideLeft">
       <h2>Trabajos Destacados</h2>
       <div class="galeria">
-        <div class="producto"><img src="ropa1.png" alt="Ropa 1"><p>Outfit #1</p></div>
-        <div class="producto"><img src="ropa2.png" alt="Ropa 2"><p>Outfit #2</p></div>
-        <div class="producto"><img src="ropa3.png" alt="Ropa 3"><p>Outfit #3</p></div>
+        <!-- Visibles -->
+        <div class="card fade-in delay-1"><img src="img/ropa1.png" alt="Ropa 1"><p>Outfit #1</p></div>
+<div class="card fade-in delay-2"><img src="img/ropa2.png" alt="Ropa 2"><p>Outfit #2</p></div>
+<div class="card fade-in delay-3"><img src="img/ropa3.png" alt="Ropa 3"><p>Outfit #3</p></div>
+<div class="card fade-in delay-4"><img src="img/ropa4.png" alt="Ropa 4"><p>Outfit #4</p></div>
+        <!-- Ocultos -->
+        <div class="card extra fade-in delay-2"><img src="img/ropa5.png" alt="Ropa 5"><p>Outfit #5</p></div>
+<div class="card extra fade-in delay-3"><img src="img/ropa6.png" alt="Ropa 6"><p>Outfit #6</p></div>
+<div class="card extra fade-in delay-4"><img src="img/ropa7.png" alt="Ropa 7"><p>Outfit #7</p></div>
+<div class="card extra fade-in delay-5"><img src="img/ropa8.png" alt="Ropa 8"><p>Outfit #8</p></div>
+      </div>
+      <div class="ver-mas-container">
+        <button id="ver-mas-btn">Ver más</button>
       </div>
     </section>
 
-    <section id="nosotros">
-      <h2>Nosotros</h2>
-      <p>En <strong>UrbanMods</strong> ofrecemos diseños de ropa únicos para servidores FiveM. Trabajamos con texturas de alta calidad, adaptadas a tu servidor, y con entregas rápidas. ¡Tu personaje merece estilo!</p>
-      <p>Contacto vía Discord: <a href="https://discord.gg/XDCsF7RK2" target="_blank">discord.gg/XDCsF7RK2</a></p>
+    <section class="urbanmods">
+      <div class="urban-header">
+        <h2>🔥 UrbanMods | Diseños para FiveM 🔥</h2>
+      </div>
+      <div class="urban-content hidden">
+        <p>¿Quiénes somos? Somos <strong>UrbanMods</strong>, una tienda de ropa personalizada para FiveM. En nuestro servidor de Discord encontrarás algunos de nuestros trabajos.</p>
+        <ul class="servicios">
+          <li>🗡️ Diseñamos ropa personalizada para tu mafia o barrabrava con estilos únicos.</li>
+          <li>📸 Logos, banners y fondos para tu invitación a Discord.</li>
+          <li>🥅 Camisetas de fútbol a elección. ¡Ideal para tu barrabrava!</li>
+          <li>👕 Ropa para todas las facciones (PSG, SAME, PFA, PDLC, MECÁNICOS, etc.).</li>
+          <li>🚗 Autos, colectivos, motos y vehículos personalizados a tu gusto.</li>
+          <li>🎊 Rediseñamos o creamos tu servidor de Discord desde cero. ¡Organización y estilo!</li>
+        </ul>
+        <p class="nota-final">Lo anteriormente nombrado son algunas de las cosas que realizamos. ¡Pronto habrá más novedades en nuestro Discord!</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 UrbanMods | Todos los derechos reservados</p>
+    <p>&copy; 2025 UrbanMods | Shop — Todos los derechos reservados</p>
+    <span class="dev">Dev by Kevin</span>
   </footer>
+
+  <a href="https://discord.gg/XDCsF7RK2C" target="_blank" class="discord-float" title="Unite al Discord">
+    <img src="img/discord.png" alt="Discord" />
+  </a>
+  <a href="https://link.mercadopago.com.ar/urbanmodshop" target="_blank" class="mp-float" title="Comprar ahora">
+    💳
+  </a>
+  <button id="btn-subir" title="Volver arriba">⬆️</button>
+  <div class="marca-kevin">👨‍💻 Programador Kevin</div>
+
+  <script src="script.js"></script>
+
+<div id="urban-modal" class="modal">
+  <div class="modal-content">
+    <span id="cerrar-modal" class="cerrar">&times;</span>
+    <h2>🔥 UrbanMods | Diseños para FiveM 🔥</h2>
+    <p>¿Quiénes somos? Somos <strong>UrbanMods</strong>, una tienda de ropa personalizada para FiveM. En nuestro servidor de Discord encontrarás algunos de nuestros trabajos.</p>
+    <ul class="servicios">
+      <li>🗡️ Diseñamos ropa personalizada para tu mafia o barrabrava con estilos únicos.</li>
+      <li>📸 Logos, banners y fondos para tu invitación a Discord.</li>
+      <li>🥅 Camisetas de fútbol a elección. ¡Ideal para tu barrabrava!</li>
+      <li>👕 Ropa para todas las facciones (PSG, SAME, PFA, PDLC, MECÁNICOS, etc.).</li>
+      <li>🚗 Autos, colectivos, motos y vehículos personalizados a tu gusto.</li>
+      <li>🎊 Rediseñamos o creamos tu servidor de Discord desde cero. ¡Organización y estilo!</li>
+    </ul>
+    <p class="nota-final">Lo anteriormente nombrado son algunas de las cosas que realizamos. ¡Pronto habrá más novedades en nuestro Discord!</p>
+  </div>
+</div>
 </body>
 </html>
