@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel | Kevin Machine</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <div class="center-box">
+    <h1>⚙️ <span class="gradient-text">Panel de Configuración</span></h1>
+
+    <div class="user-box">
+      <img src="<%= user.avatarURL %>" alt="avatar" />
+      <p><strong><%= user.username %></strong> — ID: <%= user.id %></p>
+      <a class="btn danger" href="/logout">🚪 Cerrar sesión</a>
+    </div>
+
+    <form action="/dashboard/save" method="post">
+      <label>📝 Canal de Logs:</label>
+      <input type="text" name="logChannel" value="<%= config.logChannel %>" />
+
+      <label>🎫 Categoría de Tickets:</label>
+      <input type="text" name="ticketCategory" value="<%= config.ticketCategory %>" />
+
+      <div class="actions">
+        <button class="btn" type="submit">💾 Guardar configuración</button>
+        <a class="btn" href="/dashboard">🔁 Recargar</a>
+      </div>
+    </form>
+
+    <footer>💻 <span class="kevin">Dev By Kevin</span> — Última actualización: ahora mismo</footer>
+  </div>
+</body>
+</html>
