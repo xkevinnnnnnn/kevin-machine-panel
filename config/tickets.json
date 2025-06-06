@@ -1,0 +1,20 @@
+[
+  {
+    "id": "soporte",
+    "emoji": "🎟️",
+    "nombre": "Soporte",
+    "descripcion": "Ayuda general del servidor"
+  },
+  {
+    "id": "ventas",
+    "emoji": "💰",
+    "nombre": "Ventas",
+    "descripcion": "Consultas sobre compras o productos"
+  },
+  {
+    "id": "reclamos",
+    "emoji": "🛠️",
+    "nombre": "Reclamos",
+    "descripcion": "Reporta un problema o bug"
+  }
+]
